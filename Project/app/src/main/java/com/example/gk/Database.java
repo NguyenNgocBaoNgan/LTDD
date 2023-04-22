@@ -18,19 +18,33 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-//        String sql = "create table if not exists " + TABLE_NV +
-//                "(" +
-//                COLUMN_NV_MA + " text primary key ," +
-//                COLUMN_NV_PASS + " text," +
-//                COLUMN_NV_HOTEN + " text," +
-//                COLUMN_NV_EMAIL + " text," +
-//                COLUMN_NV_HA + " bold " +
-//                " ) ";
-//
-//        db.execSQL(sql);
-//
-//        sql = " insert into " + TABLE_NV + " values ('admin', 'admin', 'Đinh Quốc Đạt', 'nhoctengu2001@gmail.com', null) ";
-//        db.execSQL(sql);
+
+        String sql = "create table if not exists " + "Class" +
+                "(" +
+                "id" + " text primary key ," +
+                "name" + " text," +
+                "teacher" + " text," +
+                "count" + " text," +
+                "top" + " text " +
+                " ) ";
+
+        db.execSQL(sql);
+
+        sql = " insert into " + "Class" + " values ('1', '!2A1', 'Bao Ngan', '32', '3') ";
+        db.execSQL(sql);
+
+        sql = "create table if not exists " + "STUDENT" +
+                "(" +
+                "id" + " integer primary key autoincrement," +
+                "name" + " text," +
+                "birthday" + " text," +
+                "id_class" + " text" +
+                " ) ";
+        db.execSQL(sql);
+
+        sql  = " insert into " + "STUDENT" +
+                " values (null, 'Quoc Dat', '23/07/2002', '1' )";
+        db.execSQL(sql);
     }
 
     @Override

@@ -32,43 +32,43 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/bt_delTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Delete Table" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/ed_delTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Type Table to delete" />
+            android:hint="Type Table to delete" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/bt_insertRowToTbl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Insert Row to tblop" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Insert Row From tblop" />
+<!--    <Button-->
+<!--        android:id="@+id/bt_insertRowFromTbl"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Insert Row From tblop" />-->
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/bt_updateRowToTbl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Update Row to tblop" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/bt_querying_T"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Querying data tblop" />
@@ -79,27 +79,34 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/bt_insertStudent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Insert Student" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/ed_id_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Type malop to reference" />
+            android:hint="Type malop to reference" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/bt_querying_S"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Querying sinhVien by malop" />
+
+
+    <TextView
+        android:id="@+id/ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
 
 </LinearLayout>
